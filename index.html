@@ -2559,9 +2559,9 @@ details.proposal-collapsible[open] > .ps-summary{
     <div class="dean-intro-grid">
       <div class="dean-intro-body">
         <ul class="dean-bullets">
-          <li><strong>150+ growth systems</strong> shipped in the past 3 years.</li>
-          <li><strong>$250M+ in pipeline tracked</strong> from the leads our CRMs capture + close.</li>
-          <li><em>Trusted</em> by owners who hate losing leads.</li>
+          <li><strong>15+ growth systems</strong> shipped in the past 1 year.</li>
+          <li><strong>$700K+ in pipeline tracked</strong> from the leads our CRMs capture + close.</li>
+          <li><em>Trusted</em> by founders who hate losing leads.</li>
         </ul>
 
         <div class="dean-promise">My only priority is to help SEA RANKS close more deals.<br><strong>That is not a pitch — that is my promise.</strong></div>
@@ -2588,7 +2588,7 @@ details.proposal-collapsible[open] > .ps-summary{
 <!-- ============================ TRUST §D · PROOF: $1M in 90 days client video ============================ -->
 <section class="section section-proof">
   <div class="section-inner">
-    <h2 class="proof-stat">$1,000,000<span class="small">tracked in 90 days.</span></h2>
+    <h2 class="proof-stat">$100K<span class="small">tracked in 90 days.</span></h2>
     <p class="proof-sub">A real Pixel Labs client took his company from <strong>scattered leads to seven figures tracked</strong> in his first 90 days inside the CRM. No actors — just pipeline.</p>
     
 
@@ -4056,8 +4056,9 @@ document.addEventListener('DOMContentLoaded', function(){
     var P = window.KCA_PRICING;
     if(isOfferRevealed()){
       el.classList.add('is-offer');
-      var html = '<span class="pt-offer"><span class="pt-gift" aria-hidden="true">&#127873;</span>$' + fmt(P.baseOffer) + '</span>';
-      if(P.baseOffer < P.baseSetup){ html += '<span class="pt-old-below">$' + fmt(P.baseSetup) + '</span>'; }
+      var deal = (typeof calcBonusOffer === 'function') ? calcBonusOffer() : null;
+      var html = '<span class="pt-offer"><span class="pt-gift" aria-hidden="true">&#127873;</span>' + (deal === null ? 'FREE' : '$' + fmt(deal)) + '</span>';
+      if(deal !== null && P.baseSetup > 0 && deal < P.baseSetup){ html += '<span class="pt-old-below">$' + fmt(P.baseSetup) + '</span>'; }
       el.innerHTML = html;
     } else {
       el.classList.remove('is-offer');
@@ -4107,6 +4108,20 @@ document.addEventListener('DOMContentLoaded', function(){
     window.KCA_PRICING.baseOffer = n;
     return n;
   }
+  // Bonus math · if the bonus pack includes paid services, it is NOT fully free:
+  // total = sum(monthly value x months) with 20% off. Returns null when no paid
+  // services are included (pure FREE bonus).
+  function calcBonusOffer(){
+    if(typeof FREEBIES === 'undefined' || !FREEBIES) return null;
+    var fb = getFreebies();
+    var total = 0, count = 0;
+    FREEBIES.forEach(function(f){
+      var mo = fb[f.id] || 0;
+      if(mo > 0){ total += (f.monthly || 0) * mo; count++; }
+    });
+    if(!count) return null;
+    return Math.round(total * 0.8);
+  }
   function isOfferRevealed(){ try{ return localStorage.getItem(OFFERON_KEY) === '1'; }catch(e){ return false; } }
   function setOfferRevealed(on){ try{ localStorage.setItem(OFFERON_KEY, on ? '1' : '0'); }catch(e){} }
   function syncOfferBtn(){
@@ -4124,7 +4139,8 @@ document.addEventListener('DOMContentLoaded', function(){
   // Free Bonus confirmation pop-up (Accept / Close + confetti) — restored to match the Boston proposal.
   window.openOfferConfirm = function(){
     var amt = document.getElementById('offerConfirmAmount');
-    if(amt) amt.textContent = 'FREE';
+    var deal = calcBonusOffer();
+    if(amt) amt.textContent = (deal === null) ? 'FREE' : '$' + fmt(deal);
     var fb = getFreebies();
     var chosen = FREEBIES.filter(function(f){ return fb[f.id] > 0; });
     var wrap = document.getElementById('offerConfirmFreebies');
@@ -4143,7 +4159,9 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
     var sub = document.getElementById('offerConfirmSub');
-    if(sub) sub.textContent = 'Your free bonus pack — $0 today, $0 monthly. Accept to lock it in.';
+    if(sub) sub.textContent = (deal === null)
+      ? 'Your free bonus pack — $0 today, $0 monthly. Accept to lock it in.'
+      : 'Paid services included — 20% off the total ($' + fmt(deal) + '). Accept to lock it in.';
     var dlg = document.getElementById('offerConfirmModal');
     if(dlg && dlg.showModal) dlg.showModal();
   };
