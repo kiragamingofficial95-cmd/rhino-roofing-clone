@@ -128,6 +128,7 @@ a{color:inherit;text-decoration:none}
 .dean-portrait{width:100%;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,#1F2124 0%,#0E1430 100%);position:relative;box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(238,182,68,0.18)}
 .dean-portrait::before{content:'';position:absolute;inset:0;background-image:url('kca-assets/KCA-Badge-3.webp');background-size:60% auto;background-repeat:no-repeat;background-position:center;opacity:0.12;pointer-events:none}
 .dean-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.varad-mono{width:100%;height:100%;min-height:420px;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:900;font-size:170px;color:#EEB644;text-shadow:0 10px 36px rgba(238,182,68,0.35);letter-spacing:-0.02em}
 .dean-portrait-caption{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);white-space:nowrap}
 /* Money-back badge · sibling of .dean-portrait inside .dean-portrait-wrap so corner overflow is visible */
 .dean-portrait-seal{position:absolute;top:-46px;right:-46px;width:148px;height:148px;z-index:6;filter:drop-shadow(0 10px 24px rgba(0,0,0,0.42));transform:rotate(8deg);pointer-events:none}
@@ -1725,11 +1726,11 @@ details.proposal-collapsible[open] > .ps-summary{
 
       <div class="formula-how-content" data-content="traffic" hidden>
 
-        <!-- Traffic channel tabs · SEO (default, included) + Facebook Ads + Local Service Ads (price-anchored add-on channels) -->
-        <div class="formula-traffic-tabs" role="tablist" aria-label="Traffic channels">
+        <!-- Growth channel tabs · SEO (default, included) + Facebook Ads + Local Service Ads (price-anchored add-on channels) -->
+        <div class="formula-traffic-tabs" role="tablist" aria-label="Growth channels">
           <button type="button" class="formula-traffic-tab is-active" data-channel="seo" role="tab" aria-selected="true">Pipelines <span class="ftt-meta">included</span></button>
           <button type="button" class="formula-traffic-tab" data-channel="fb-ads" role="tab" aria-selected="false">Smart Automations <span class="ftt-meta ftt-price">FREE</span></button>
-          <button type="button" class="formula-traffic-tab" data-channel="lsa" role="tab" aria-selected="false">AI Calling <span class="ftt-meta ftt-price">FREE</span></button>
+          <button type="button" class="formula-traffic-tab" data-channel="lsa" role="tab" aria-selected="false"AI Calling <span class="ftt-meta ftt-price">$90/mo</span></button>
         </div>
 
         <div class="formula-traffic-pane" data-channel="seo">
@@ -1880,12 +1881,12 @@ details.proposal-collapsible[open] > .ps-summary{
 
         </div><!-- /.formula-traffic-pane[seo] -->
 
-        <!-- Facebook Ads pane · price-anchored at $997 value/mo · 4-card funnel -->
+        <!-- Smart Automations pane · price-anchored at $997 value/mo · 4-card funnel -->
         <div class="formula-traffic-pane" data-channel="fb-ads" hidden>
           <div class="traffic-channel-eyebrow">
             <span class="tce-icon" aria-hidden="true">&#128242;</span>
-            <span class="tce-label">Facebook Ads</span>
-            <span class="tce-price">$997 value<em>/mo</em></span>
+            <span class="tce-label">Smart Automations</span>
+            <span class="tce-price">FREE<em> included</em></span>
             <span class="tce-tag">Automation &middot; built-in FREE</span>
           </div>
           <div class="traffic-channel-head">
@@ -1932,16 +1933,16 @@ details.proposal-collapsible[open] > .ps-summary{
           </div>
         </div>
 
-        <!-- Local Service Ads pane · price-anchored at $1,000/mo · 4-card funnel -->
+        <!-- AI Calling pane · price-anchored at $1,000/mo · 4-card funnel -->
         <div class="formula-traffic-pane" data-channel="lsa" hidden>
           <div class="traffic-channel-eyebrow">
             <span class="tce-icon" aria-hidden="true">&#128205;</span>
-            <span class="tce-label">Local Service Ads</span>
-            <span class="tce-price">$1,000<em>/mo</em></span>
-            <span class="tce-tag">AI Voice &middot; included FREE</span>
+            <span class="tce-label">AI Calling + Connection</span>
+            <span class="tce-price">$90<em>/mo</em></span>
+            <span class="tce-tag">AI Voice &middot; $90/mo service</span>
           </div>
-          <h4 class="traffic-channel-title">AI-handled leads. Pay nothing — it's free forever.</h4>
-          <p class="traffic-channel-sub">AI Voice sits INSIDE your CRM. You get instant response, smart qualification and auto-booking. No lead wasted, no extra tools.</p>
+          <h4 class="traffic-channel-title">AI-handled leads. One flat service — just $90/mo.</h4>
+          <p class="traffic-channel-sub">AI Voice sits INSIDE your CRM. You get instant response, smart qualification and auto-booking. No lead wasted — a single $90/mo service, zero extra tools.</p>
           <div class="traffic-funnel-grid">
             <article class="traffic-funnel-card">
               <div class="tfc-step">01</div>
@@ -1966,7 +1967,7 @@ details.proposal-collapsible[open] > .ps-summary{
           </div>
           <div class="traffic-channel-stat">
             <span class="tcs-num">5&ndash;8&times;</span>
-            <span class="tcs-text"><strong>Typical CRM lift</strong> for SEA RANKS because every lead is auto-followed for 12 months. The $0/mo cost covers pipelines + automations + AI routing — free forever.</span>
+            <span class="tcs-text"><strong>Typical CRM lift</strong> for SEA RANKS because every lead is auto-followed for 12 months. Pipelines + automations are free forever — AI Calling + Connection is one flat $90/mo service.</span>
           </div>
         </div>
 
@@ -1988,7 +1989,7 @@ details.proposal-collapsible[open] > .ps-summary{
           </ul>
           <div class="feature-card-stat-callout">
             <div class="feature-card-stat-num">5 sec</div>
-            <div class="feature-card-stat-text"><strong>Why this works:</strong> teams win in the first <strong>5 seconds</strong> 5 minutes whether a lead goes cold. Real live pipeline tells you exactly who to call , before revenue leaks.</div>
+            <div class="feature-card-stat-text"><strong>Why this works:</strong> teams win in the first <strong>5 minutes</strong> — that is all it takes for a lead to go cold. Real live pipeline tells you exactly who to call , before revenue leaks.</div>
           </div>
           <a class="feature-card-cta" href="https://pixel-labs-crm.vercel.app/#hero" target="_blank" rel="noopener">See it in your live CRM &rarr;</a>
         </article>
@@ -2037,12 +2038,13 @@ details.proposal-collapsible[open] > .ps-summary{
             <h4 class="feature-card-title"><span class="fc-emoji">&#128737;&#65039;</span> Reputation Engine &middot; protect 5 stars forever</h4>
             <span class="feature-card-tag feature-card-tag-trust">TRUST</span>
           </div>
-          <p class="feature-card-meta">Compounding reviews on autopilot , one less thing on your plate</p>
+          <p class="feature-card-meta">Compounding reviews on autopilot · $100 one-time , one less thing on your plate</p>
           <ul class="feature-card-bullets">
             <li>Auto-request a Google review from every closed deal.</li>
             <li>Hot reviews fast-tracked to Google + Facebook + BBB.</li>
             <li>Negative feedback routes privately to you first.</li>
             <li>Goal: protect your 4.9 stars x 157 reputation forever.</li>
+            <li><strong>$100 one-time</strong> , pay once — the engine runs forever. No monthly fee.</li>
           </ul>
           <div class="feature-card-stat-callout">
             <div class="feature-card-stat-num">+18%</div>
@@ -2139,7 +2141,7 @@ details.proposal-collapsible[open] > .ps-summary{
             <h4 class="feature-card-title"><span class="fc-emoji">&#128241;&#8205;&#9742;&#65039;</span> Instant Callback &middot; 60-sec AI Voice</h4>
             <span class="feature-card-tag feature-card-tag-conversion">AI</span>
           </div>
-          <p class="feature-card-meta">Lead submits , AI is on their phone in 60 seconds</p>
+          <p class="feature-card-meta">Lead submits , AI is on their phone in 60 seconds · $90/mo service</p>
           <ul class="feature-card-bullets">
             <li>60-second callback the moment a lead submits any form.</li>
             <li>Automated voice qualifies, then bridges live to your mobile.</li>
@@ -2172,7 +2174,7 @@ details.proposal-collapsible[open] > .ps-summary{
       <div class="reason">
         <div class="reason-num">02</div>
         <div class="reason-title">More Firepower Than $300/mo Tools</div>
-        <p class="reason-body">Capture + pipelines + automations + AI voice + reputation + calendar + reporting — everything GoHighLevel charges $0/mo-$497/mo for, free in your Pixel Labs CRM.</p>
+        <p class="reason-body">Capture + pipelines + automations + AI voice + reputation + calendar + reporting — everything GoHighLevel charges $0/mo-$497/mo for, free in your Pixel Labs CRM (AI Calling $90/mo · Reputation $100 one-time optional extras).</p>
       </div>
       <div class="reason">
         <div class="reason-num">03</div>
@@ -2433,7 +2435,7 @@ details.proposal-collapsible[open] > .ps-summary{
     <!-- FEATURE 3 · Reputation · collapsible, collapsed by default -->
     <details class="ai-rep">
       <summary>
-        <span class="ai-rep-sum-title">Reputation, <em>on autopilot.</em></span>
+        <span class="ai-rep-sum-title">Reputation, <em>on autopilot · $100 one-time.</em></span>
         <span class="ai-rep-hint">Tap to expand</span>
         <span class="ai-rep-chev" aria-hidden="true">&#9662;</span>
       </summary>
@@ -2442,7 +2444,7 @@ details.proposal-collapsible[open] > .ps-summary{
           <div class="ai-row-text">
             <span class="ai-row-tag"><span class="ai-row-tag-ic" aria-hidden="true">&#9733;</span>Reputation Agent</span>
             <h3 class="ai-row-headline">Build a 5-star reputation, <em>on autopilot.</em></h3>
-            <p class="ai-row-body">After every win, CRM requests a Google review, fast-tracks happy clients to Google + Facebook, and routes anything negative privately to you first.</p>
+            <p class="ai-row-body">After every win, CRM requests a Google review, fast-tracks happy clients to Google + Facebook, and routes anything negative privately to you first. One flat $100 setup — no monthly, ever.</p>
             <div class="ai-row-stat"><span class="ai-row-stat-num">+18%</span><span class="ai-row-stat-text">A brand at 4.9 stars with 100+ reviews closes 18% more deals at the same lead flow than one at 4.5 stars with 30.</span></div>
           </div>
           <aside class="ai-row-mock ai-row-mock-review" aria-hidden="true">
@@ -2528,7 +2530,7 @@ details.proposal-collapsible[open] > .ps-summary{
 <!-- ============================ TRUST · HELLO I'M DEAN (merged §A + §B per Dean transcript 2026-05-09) ============================ -->
 <section class="section section-trust section-dean-light">
   <div class="section-inner">
-    <h2 class="section-title">Hello, <em>I'm Dean.</em></h2>
+    <h2 class="section-title">Hello, <em>I'm Varad.</em></h2>
 
     <div class="dean-intro-grid">
       <div class="dean-intro-body">
@@ -2542,320 +2544,20 @@ details.proposal-collapsible[open] > .ps-summary{
 
         <div class="dean-signature">
           <div class="dean-sig-text">
-            <span class="dean-sig-name">Dean White</span>
+            <span class="dean-sig-name">Varad</span>
             <span class="dean-sig-title">Founder, Pixel Labs</span>
           </div>
         </div>
       </div>
 
       <div class="dean-portrait-wrap">
-        <div class="dean-portrait" role="img" aria-label="Dean White at RoofCon">
-          <img src="kca-assets/dean-about.png" alt="Dean White, Pixel Labs Founder" loading="lazy">
-          <div class="dean-portrait-caption">Dean White &middot; Founder of Pixel Labs</div>
+        <div class="dean-portrait" role="img" aria-label="Varad, Founder of Pixel Labs">
+          <div class="varad-mono" aria-hidden="true">V</div>
+          <div class="dean-portrait-caption">Varad &middot; Founder of Pixel Labs</div>
         </div>
       </div>
     </div>
 
-    <!-- ============================ DEAN-EMBEDDED FB REVIEW CAROUSEL (moved 2026-05-10 — was a standalone .section-reviews on the dark band; Dean wants it as a sub-block of Hello-Dean on the cream background) ============================ -->
-    <div class="dean-reviews-block">
-      <div class="kca-reviews-aggregate">
-        <span class="num">120</span>
-        <span>5-star reviews on</span>
-        <span class="platforms">
-          <span class="platform-icon platform-google" aria-label="Google">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
-          </span>
-          <span class="platform-icon platform-fb" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-          </span>
-        </span>
-        <span>Google + Facebook</span>
-      </div>
-      <div class="kca-reviews-carousel-wrap">
-        <button class="kca-reviews-arrow kca-reviews-prev" aria-label="Previous review">&lsaquo;</button>
-        <div class="kca-reviews-carousel" id="kca-reviews-carousel">
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/02/r2.webp" alt="Sean Becker" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Sean Becker</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">I highly recommend Pixel Labs! We have loved our experience so far with Dean White and his team at Pixel Labs. They have done everything they promised, which is unusual for marketing agencies in the roofing industry. The communication is great and they are always challenging us on new marketing techniques.</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/02/r1.webp" alt="Joseph Elshazly" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Joseph Elshazly</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean and his team are REAL professionals. Ive been in roofing and construction my whole life and used countless "marketing" and "webdesign" companies. These guys are the REAL DEAL. Just take a look at their websites and results... they speak for themselves.</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/02/r3.webp" alt="Marshall Green" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Marshall Green</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean is a down to Earth, Genuine, Great guy that really cares about giving his clients the best services available, really happy we chose to do business with Pixel Labs!</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr4.webp" alt="Neal Spennato Jr." loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Neal Spennato Jr.</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">After hiring Dean &amp; his crew I was more than impressed with the work they were putting in. They made sure to cover every aspect of our website and social media. They go above and beyond! 5 Stars!</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr5.webp" alt="Joey Walker" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Joey Walker</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean and his Team built my Roofing and Construction website and did an amazing job at it. I would highly recommend them.</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr6.webp" alt="Ben Burgess" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Ben Burgess</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean and his Team did a great job for us. Thank you Dean!!!!!!</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr7.webp" alt="Ruan Squires" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Ruan Squires</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean and his team really understands what is needed. They provide the missing links for any business</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr8.webp" alt="Jannah Lynn" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Jannah Lynn</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Dean is awesome! He helped me with a program that makes reviewing our company super easy for our clients. He also took the time to look at our website and online presence to help me see what our needs are. Dean took the time to educate me and assist through a zoom call with NO OBLIGATION and his services have a money back guarantee. Looking forward to working together in the future and highly recommend to anyone in the roofing industry. Thank you Dean!!!!</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/04/rr9.webp" alt="Donald Storm" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">Donald Storm</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">If you're looking for awesome and quality marketing reach out to Pixel Labs Marketing. They will set you up to succeed!!</div>
-          </div>
-
-          <div class="kca-review-card">
-            <div class="kca-review-card-platform" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
-            </div>
-            <div class="kca-review-card-header">
-              <img class="kca-review-card-img" src="https://pixel-labs-crm.vercel.app/wp-content/uploads/2024/02/r10.webp" alt="John Tucker" loading="lazy">
-              <div class="kca-review-card-info">
-                <div class="kca-review-card-name">John Tucker</div>
-                <div class="kca-review-card-stars"><span class="star-num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="kca-review-card-source">Facebook Review</div>
-              </div>
-            </div>
-            <div class="kca-review-card-text">Love how passionate this team is about making all of us owners look amazing and like we belong in the modern business world</div>
-          </div>
-
-        </div>
-        <button class="kca-reviews-arrow kca-reviews-next" aria-label="Next review">&rsaquo;</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ CLIENT-BUILDS · PARALLAX REVIEW TILES (NEW per Dean transcript 2026-05-09) ============================ -->
-<!-- Each tile pairs a real Pixel Labs-built website screenshot with a Google review card offset to the bottom-right of the image (parallax style). The 6 mockups + 6 reviews are PLACEHOLDER PAIRINGS — Dean to swap to real owner-quote-per-website mappings. -->
-<section class="section section-trust section-client-builds">
-  <div class="section-inner">
-    <h2 class="section-title">Proven <em>in the real world.</em></h2>
-    <p class="section-sub">Every system below was deployed by Pixel Labs. Real pipelines. Real owners. Real revenue. <strong>Real pipelines. Real owners. Real revenue.</strong></p>
-
-    <!-- Auto-sliding CAROUSEL · 3-up · each slide = website mockup + dark review card overlapping bottom-right (parallax style, 2026-05-11 per Dean). Owner names verified against each live About page. Columbus + Roofing Tech Unlimited unverified (sites unreachable) — initials avatar; Dean to swap. -->
-    <div class="client-builds-carousel-wrap">
-      <button type="button" class="cb-carousel-arrow cb-carousel-prev" aria-label="Previous client build">&lsaquo;</button>
-      <div class="client-builds-carousel" id="client-builds-carousel">
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://rapidresponseroofs.com" target="_blank" rel="noopener" aria-label="Rapid Response Co , open live site">
-          <img src="kca-assets/client-builds/rapid-imgs1.webp" alt="Rapid Response Co website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/codey-eatherton.jpg" alt="Codey Eatherton" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Codey Eatherton</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Rapid Response Co</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Pixel Labs built our entire follow-up machine. The CRM does the chasing for us — highly recommend."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://columbusroofing.co" target="_blank" rel="noopener" aria-label="Columbus Growth Co , open live site">
-          <img src="kca-assets/client-builds/col-imgs1.webp" alt="Columbus Growth Co website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar" aria-hidden="true">JE</div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Joseph Elshazly</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Columbus Growth Co</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Pixel Labs are REAL professionals. REAL follow-up, REAL automation — just look at our pipeline and results."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://vanguardgc.com" target="_blank" rel="noopener" aria-label="Vanguard Contracting , open live site">
-          <img src="kca-assets/client-builds/vanguard-imgs1.webp" alt="Vanguard Contracting website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/sam-kohler.webp" alt="Sam Kohler" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Sam Kohler</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Vanguard Contracting</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Pixel Labs built the CRM that does the heavy lifting. Genuine team, real revenue — best move we made."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://dandmroofing.com" target="_blank" rel="noopener" aria-label="D&M Services , open live site">
-          <img src="kca-assets/client-builds/dandmwe-imgs1.webp" alt="D&M Services website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/eric-oberembt.webp" alt="Eric Oberembt" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Eric Oberembt</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">D&M Services</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Dean and his crew cover everything — CRM, automations, AI. They go above and beyond. 5 stars."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://gravityroof.com" target="_blank" rel="noopener" aria-label="Gravity Media , open live site">
-          <img src="kca-assets/client-builds/gravity-imgs1.webp" alt="Gravity Media website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/taz-crumpler.webp" alt="Taz Crumpler" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Taz Crumpler</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Gravity Media</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"If you're leaking leads, get the Pixel Labs CRM. They set you up to win."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://roofingtechnologiesunlimited.com" target="_blank" rel="noopener" aria-label="Tech Scale Unlimited , open live site">
-          <img src="kca-assets/client-builds/roofingtechnology-imgs1.webp" alt="Tech Scale Unlimited website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar" aria-hidden="true">BB</div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Ben Burgess</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Tech Scale Unlimited</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Pixel Labs did a great job for us — pipeline, automations, everything. Thank you Dean."</div>
-        </aside>
-      </article>
-
-      </div>
-      <button type="button" class="cb-carousel-arrow cb-carousel-next" aria-label="Next client build">&rsaquo;</button>
-      <div class="cb-carousel-dots" id="cb-carousel-dots" aria-hidden="true"></div>
-    </div>
   </div>
 </section>
 
@@ -2863,44 +2565,9 @@ details.proposal-collapsible[open] > .ps-summary{
 <section class="section section-proof">
   <div class="section-inner">
     <h2 class="proof-stat">$1,000,000<span class="small">tracked in 90 days.</span></h2>
-    <p class="proof-sub">A real Pixel Labs client took his company from <strong>scattered leads to seven figures tracked</strong> in his first 90 days inside the CRM. Watch his story.</p>
-    <a class="proof-video-wrap" href="https://www.youtube.com/watch?v=VNYoIJjtnXY" target="_blank" rel="noopener" aria-label="Watch the $1M in 90 days client story on YouTube">
-      <img src="https://img.youtube.com/vi/VNYoIJjtnXY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/VNYoIJjtnXY/hqdefault.jpg'">
-      <div class="proof-play-btn" aria-hidden="true"></div>
-      <span class="proof-caption">Watch on YouTube &middot; 4 min</span>
-    </a>
+    <p class="proof-sub">A real Pixel Labs client took his company from <strong>scattered leads to seven figures tracked</strong> in his first 90 days inside the CRM. No actors — just pipeline.</p>
+    
 
-    <!-- 2x2 case-studies grid · 4 owner-testimonial videos (added 2026-05-09 from /Desktop/Video Testimonials/) -->
-    <div class="case-studies-grid">
-      <div class="case-study-card" data-cs-idx="0">
-        <div class="case-study-thumb">
-          <video class="case-study-video" src="kca-assets/case-studies/bryson.mp4" preload="metadata" playsinline></video>
-          <button type="button" class="case-study-play" aria-label="Play Bryson testimonial"></button>
-        </div>
-        <div class="case-study-title">Bryson</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="1">
-        <div class="case-study-thumb">
-          <video class="case-study-video" src="kca-assets/case-studies/eric-dm-roofing.mp4" preload="metadata" playsinline></video>
-          <button type="button" class="case-study-play" aria-label="Play Eric · D&M Services testimonial"></button>
-        </div>
-        <div class="case-study-title">Eric &middot; D&M Services</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="2">
-        <div class="case-study-thumb">
-          <video class="case-study-video" src="kca-assets/case-studies/jason-gladiator.mp4" preload="metadata" playsinline></video>
-          <button type="button" class="case-study-play" aria-label="Play Jason · Gladiator Roofing testimonial"></button>
-        </div>
-        <div class="case-study-title">Jason &middot; Gladiator Co</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="3">
-        <div class="case-study-thumb">
-          <video class="case-study-video" src="kca-assets/case-studies/owner-testimonial.mp4" preload="metadata" playsinline></video>
-          <button type="button" class="case-study-play" aria-label="Play owner testimonial"></button>
-        </div>
-        <div class="case-study-title">Owner Testimonial</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -2977,10 +2644,10 @@ details.proposal-collapsible[open] > .ps-summary{
         <div class="value-stack-head">What's included FREE</div>
         <div class="value-stack-list">
           <div class="vs-item"><span class="vs-name">Smart CRM Setup (pipelines + inbox + calendar)</span><span class="vs-msrp">$4,997</span></div>
-          <div class="vs-item"><span class="vs-name">AI Follow-Up Stack (chat + SMS + voice + booking)</span><span class="vs-msrp">$2,997<em>/yr</em></span></div>
+          <div class="vs-item"><span class="vs-name">AI Follow-Up Stack (chat + SMS + voice + booking)</span><span class="vs-msrp">$90<em>/mo service</em></span></div>
           <div class="vs-item"><span class="vs-name">Automation Library (12 proven workflows)</span><span class="vs-msrp">$1,997</span></div>
           <div class="vs-item"><span class="vs-name">Hosting &middot; Updates &middot; Support</span><span class="vs-msrp">$997<em>/yr</em></span></div>
-          <div class="vs-item"><span class="vs-name">Reputation + Review Auto-Engine</span><span class="vs-msrp">$997<em>/yr</em></span></div>
+          <div class="vs-item"><span class="vs-name">Reputation + Review Auto-Engine</span><span class="vs-msrp">$100<em> one-time</em></span></div>
         </div>
       </div>
 
@@ -3032,7 +2699,7 @@ details.proposal-collapsible[open] > .ps-summary{
         <div class="setup-fee-modal-inner">
           <button type="button" class="setup-fee-modal-close" onclick="document.getElementById('offerConfirmModal').close()" aria-label="Close">&times;</button>
           <div class="setup-fee-eyebrow">Free Bonus</div>
-          <div class="setup-fee-amount-row"><div class="setup-fee-amount" id="offerConfirmAmount">$997 value</div></div>
+          <div class="setup-fee-amount-row"><div class="setup-fee-amount" id="offerConfirmAmount">FREE</div></div>
           <p class="setup-fee-sub" id="offerConfirmSub"></p>
           <div class="offer-confirm-freebies" id="offerConfirmFreebies"></div>
           <div class="offer-confirm-actions">
@@ -3042,7 +2709,7 @@ details.proposal-collapsible[open] > .ps-summary{
         </div>
       </dialog>
 
-      <p class="pricing-fine">Instant access. We activate your CRM the moment you claim it — free.</p>
+      <p class="pricing-fine">Instant access. We activate your CRM the moment you claim it — free. Optional: AI Calling $90/mo · Reputation Engine $100 one-time.</p>
     </div>
 
     <!-- Money-back guarantee · prominent badge below the pricing card per Dean transcript 2026-05-09 -->
@@ -3064,7 +2731,7 @@ details.proposal-collapsible[open] > .ps-summary{
     <div class="accept-block">
       <div class="accept-side">
         <h3>Pixel Labs</h3>
-        <div class="accept-row"><div class="label">Name</div><div class="pre-filled">Dean White, Founder</div></div>
+        <div class="accept-row"><div class="label">Name</div><div class="pre-filled">Varad, Founder</div></div>
         <div class="accept-row"><div class="label">Company</div><div class="pre-filled">Pixel Labs LLC</div></div>
         <div class="accept-row accept-row-date">
           <div class="label">Date</div>
@@ -4026,7 +3693,7 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="sop-pw-icon">&#128274;</div>
       <div class="sop-pw-eyebrow">Restricted &middot; Pixel Labs Internal</div>
       <div class="sop-pw-title" id="sopPwTitle">Enter password to view the SOP</div>
-      <p class="sop-pw-sub">The Ultimate Free CRM Blueprint is Pixel Labs proprietary. Ask Dean for the access code.</p>
+      <p class="sop-pw-sub">The Ultimate Free CRM Blueprint is Pixel Labs proprietary. Ask Varad for the access code.</p>
       <input type="password" class="sop-pw-input" id="sopPwInput" placeholder="ENTER ACCESS CODE" autocomplete="off" spellcheck="false" maxlength="32">
       <div class="sop-pw-error" id="sopPwError">&#9888; Wrong code , try again</div>
       <button type="button" class="sop-pw-submit" onclick="submitSopPassword()">Unlock SOP &rarr;</button>
@@ -4040,7 +3707,7 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="sop-pw-icon">&#128274;</div>
       <div class="sop-pw-eyebrow">Restricted &middot; Pixel Labs Internal</div>
       <div class="sop-pw-title" id="hpPwTitle">Enter password to view the case study</div>
-      <p class="sop-pw-sub">The SEA RANKS automation + pipeline demo is private Pixel Labs proof. Ask Dean for the access code.</p>
+      <p class="sop-pw-sub">The SEA RANKS automation + pipeline demo is private Pixel Labs proof. Ask Varad for the access code.</p>
       <input type="password" class="sop-pw-input" id="hpPwInput" placeholder="ENTER ACCESS CODE" autocomplete="off" spellcheck="false" maxlength="32">
       <div class="sop-pw-error" id="hpPwError">&#9888; Wrong code , try again</div>
       <button type="button" class="sop-pw-submit" onclick="submitHpPassword()">Unlock &rarr;</button>
@@ -4131,14 +3798,14 @@ document.addEventListener('DOMContentLoaded', function(){
   // Default success-checklist items · proposed during the discovery call by default.
   // Juan can tick/untick / edit / add / remove items inline once Edit mode is on.
   var DEFAULT_CHECKLIST = [
-    'Full custom smart CRM built in 3 days',
+    'Free smart CRM live in 24 hours — pipelines, inbox, calendar',
     'AI lead-handling stack live: 60-second callback + chatbot',
-    'SEO + AEO foundation indexed across 8 cities',
-    'Google Business Profile claimed, optimized, syncing reviews',
-    'Real verified reviews showing above the fold',
-    'Mobile-first design that converts on a 5-inch screen',
-    '100% money-back guarantee · cancel any time after month 3',
-    'Same-day appointment booking via the live form',
+    'Smart automations running: missed-call text-back + follow-up flows',
+    'AI Calling + Connection ready ($90/mo service)',
+    'Reputation Engine armed ($100 one-time)',
+    'Real pipeline + reporting the whole team can run from mobile',
+    'Free-forever guarantee · no card, no contracts, cancel anytime',
+    'Same-day booking via calendar + chat',
   ];
 
   // ---- Add-on catalog (single source of truth) ----
@@ -4150,8 +3817,8 @@ document.addEventListener('DOMContentLoaded', function(){
   ];
   // ---- Freebie catalog · 3 services that can be added to the Free Bonus as bonus months ----
   var FREEBIES = [
-    { id:'lsa', name:'Local Service Ads', monthly:1000 },
-    { id:'fb',  name:'Facebook Ads',      monthly:2500 },
+    { id:'lsa', name:'AI Calling + Connection', monthly:1000 },
+    { id:'fb',  name:'Smart Automations', monthly:2500 },
     { id:'seo', name:'SEO',               monthly:2500 },
   ];
   var FREEBIE_DURATIONS = [1, 3, 6];  // months · user toggles per freebie
@@ -4402,7 +4069,7 @@ document.addEventListener('DOMContentLoaded', function(){
   };
 
   // ---- Free Bonus (revealed on the price card) ----
-  var OFFER_KEY = 'pixel-labs-one-time-offer-sea-ranks';
+  var OFFER_KEY = 'pixel-labs-crm-bonus-v2';
   var OFFERON_KEY = 'kca-' + CLIENT_KEY + '-offer-revealed';
   function getOffer(){
     var v = localStorage.getItem(OFFER_KEY);
@@ -4433,7 +4100,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // Free Bonus confirmation pop-up (Accept / Close + confetti) — restored to match the Boston proposal.
   window.openOfferConfirm = function(){
     var amt = document.getElementById('offerConfirmAmount');
-    if(amt) amt.textContent = '$' + fmt(getOffer());
+    if(amt) amt.textContent = 'FREE';
     var fb = getFreebies();
     var chosen = FREEBIES.filter(function(f){ return fb[f.id] > 0; });
     var wrap = document.getElementById('offerConfirmFreebies');
@@ -4452,7 +4119,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
     var sub = document.getElementById('offerConfirmSub');
-    if(sub) sub.textContent = chosen.length ? 'Your one-time offer, with the free add-ons below included. Accept to lock it in.' : 'Your act-now one-time offer price. Accept to lock it in.';
+    if(sub) sub.textContent = 'Your free bonus pack — $0 today, $0 monthly. Accept to lock it in.';
     var dlg = document.getElementById('offerConfirmModal');
     if(dlg && dlg.showModal) dlg.showModal();
   };
